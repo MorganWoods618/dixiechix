@@ -7,11 +7,10 @@ function App() {
   return (
     <BrowserRouter>
       <Header/>
-        {/* <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/myposts" element={<MyPostsPage />} />
-      </Routes> */}
-      <ContactForm/>
+        <Routes>
+      {/* <Route path="/" element={<LandingPage />} /> */}
+      <Route path="/contactus" element={<ContactForm />} />
+      </Routes>
       <Footer/>
     </BrowserRouter>
   );

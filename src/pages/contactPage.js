@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
+
 const ContactForm = () => {
   const {
     register,
@@ -11,7 +12,6 @@ const ContactForm = () => {
     formState: { errors }
   } = useForm();
   
-  // Function that displays a success toast on bottom right of the page when form submission is successful
   const toastifySuccess = () => {
     toast('Form sent!', {
       position: 'bottom-right',
@@ -25,9 +25,8 @@ const ContactForm = () => {
     });
   };
   
-  // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = async (data) => {
-    // Destrcture data object
+
     const { name, email, subject, message } = data;
     try {
       const templateParams = {
@@ -38,11 +37,10 @@ const ContactForm = () => {
       };
 
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_40dw5hg,
-        process.env.REACT_APP_TEMPLATE_8mrtc9g,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_UCuKKRclpGtJPQeAA,
-
+        process.env.REACT_APP_USER_ID
       );
 
       reset();
