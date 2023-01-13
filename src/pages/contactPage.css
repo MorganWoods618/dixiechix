@@ -1,0 +1,49 @@
+.main {
+    min-height: 90vh;
+    display: top;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .title {
+    font-size: 95px;
+    color:black;
+    text-shadow: -1px -1px 0 rgb(172, 170, 170), 1px -1px 0 rgb(172, 170, 170), -1px 1px 0 rgb(172, 170, 170), 1px 1px 0 rgb(172, 170, 170);  }
+  
+  .subTitle {
+    font-size: 25px;
+    padding-top: 10px;
+    color:black;
+  }
+  
+  .intro-text {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .maincard {
+    background-color: rgb(255, 255, 255);
+  }
+  @media only screen and (min-width: 1200px) {
+    .buttonContainer {
+      padding: 0 200px;
+    }
+    .title {
+      padding: 0 100px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .title{
+          font-size: 60px;
+      }
+      .landingButton{
+          width: 150px;
+          height: 50px;
+      }
+      
+  }

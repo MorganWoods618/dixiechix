@@ -3,10 +3,10 @@ import {
     Navbar,
     Nav,
   } from "react-bootstrap";
-  
+
   const Header = () => {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" sticky="top">
         <Container>
           <Navbar.Brand href="/">Dixie Chix</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

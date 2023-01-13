@@ -4078,11 +4078,11 @@ fieldset:disabled .btn {
   --bs-card-inner-border-radius: calc(0.375rem - 1px);
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
-  --bs-card-cap-bg: #515960;
+  --bs-card-cap-bg: #4e565d;
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #32383e;
+  --bs-card-bg: rgba(0, 0, 0, 0.6);;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
