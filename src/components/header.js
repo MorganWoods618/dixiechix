@@ -12,7 +12,7 @@ import {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="auto">
-              <Nav.Link href="/ucrinformation">UCR Information</Nav.Link>
+              {/* <Nav.Link href="/ucrinformation">UCR Information</Nav.Link> */}
               <Nav.Link href="/testimonials">Customer Testimonials</Nav.Link>
               <Nav.Link href="/contactus">Contact Us</Nav.Link>
 
