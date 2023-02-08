@@ -6,6 +6,7 @@ const TestimonialsPage = () => {
     <div className="main">
       <Container>
         <Row>
+        <p className="subTitle"> </p>
           <div className="card maincard text-white mb-3">
             <div className="card-header">Customer Testimonials</div>
             <div className="card-body">
@@ -45,7 +46,7 @@ const TestimonialsPage = () => {
                 for us!"
               </p>
             </div>
-          </div>
+          </div>          
         </Row>
       </Container>
     </div>

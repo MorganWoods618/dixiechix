@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./contactPage.css";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail, MdPhone } from "react-icons/md";
 
 const ContactForm = () => {
   const {
@@ -58,21 +58,22 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="ContactForm">
-        <div className="card maincard text-white mb-3">
+        <div className="card maincardContact text-white mb-3">
+          <div className="contactInfo card-header">
           {/* change from a p tag to margin */}
           <p>
             <MdOutlineEmail />
-            dixiechixreporting@gmail.com
+            DixieChixReporting@Gmail.com
           </p>
           <p>
-            <MdOutlineEmail />
+            <MdPhone />
             Kelly 435-414-8858
           </p>
           <p>
-            <MdOutlineEmail />
-            Phone Number Tyler
+            <MdPhone />
+            Tyler 435-817-9408
           </p>
-
+          </div>
           <div className="container">
             <div className="row">
               <div className="col-12 text-center">
@@ -83,7 +84,7 @@ const ContactForm = () => {
                     noValidate
                   >
                     {/* Row 1 of form */}
-                    <div className="row formRow">
+                    <div className="row formRowContact">
                       <div className="col-6">
                         <input
                           type="text"
@@ -127,7 +128,7 @@ const ContactForm = () => {
                       </div>
                     </div>
                     {/* Row 2 of form */}
-                    <div className="row formRow">
+                    <div className="row formRowContact">
                       <div className="col">
                         <input
                           type="text"
@@ -153,7 +154,7 @@ const ContactForm = () => {
                       </div>
                     </div>
                     {/* Row 3 of form */}
-                    <div className="row formRow">
+                    <div className="row formRowContact">
                       <div className="col">
                         <textarea
                           rows={3}
